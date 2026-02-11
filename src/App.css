@@ -662,3 +662,225 @@
   color: #ffffff;
   text-decoration: underline;
 }
+/* ========================= */
+/* GLOBAL RESPONSIVE FIX */
+/* ========================= */
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* ========================= */
+/* TABLET VIEW */
+/* ========================= */
+
+@media (max-width: 1024px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .nav-links {
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  /* Hero */
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  /* Teams */
+  .teams-page {
+    padding: 100px 40px;
+  }
+
+  /* Matches */
+  .matches-page {
+    padding: 100px 40px;
+  }
+
+  /* Cricket Info */
+  .cricket-info {
+    padding: 100px 40px;
+  }
+
+}
+
+/* ========================= */
+/* MOBILE VIEW */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* Navbar Stack */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-buttons {
+    justify-content: center;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* Slider Fix */
+  .slider-container {
+    height: 70vh;
+  }
+
+  /* Auth Forms */
+  .auth-container input,
+  .auth-btn {
+    width: 90%;
+  }
+
+  /* Book Ticket */
+  .book-form {
+    width: 90%;
+  }
+
+  /* Teams */
+  .teams-page {
+    padding: 80px 20px;
+  }
+
+  .teams-page h1 {
+    font-size: 32px;
+  }
+
+  /* Matches */
+  .matches-page {
+    padding: 80px 20px;
+  }
+
+  .matches-page h1 {
+    font-size: 32px;
+  }
+
+  /* About */
+  .about-page {
+    padding: 80px 20px;
+  }
+
+  .about-page h1 {
+    font-size: 34px;
+  }
+
+  .about-page p {
+    font-size: 16px;
+  }
+
+  /* Cricket Info */
+  .cricket-info {
+    padding: 80px 20px;
+  }
+
+  /* Help */
+  .help-card {
+    width: 90%;
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+}
+
+/* ========================= */
+/* SMALL MOBILE VIEW */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    font-size: 14px;
+  }
+
+  .team-card {
+    font-size: 16px;
+  }
+
+  .match-card h2 {
+    font-size: 18px;
+  }
+
+}
+
+/* ========================= */
+/* GRID AUTO RESPONSIVE */
+/* ========================= */
+
+.teams-grid,
+.matches-list,
+.info-grid {
+  width: 100%;
+}
+
+/* ========================= */
+/* IMAGE RESPONSIVE */
+/* ========================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========================= */
+/* BUTTON RESPONSIVE */
+/* ========================= */
+
+button {
+  white-space: nowrap;
+}
+
+/* ========================= */
+/* FORM INPUT FIX */
+/* ========================= */
+
+input, select, textarea {
+  width: 100%;
+}
