@@ -168,13 +168,11 @@
 
 
 /* Image paths */
-.bg1 { background-image: url("C:\\Users\\Admin\\react123\\wp7119361-ipl-2020-wallpapers.jpg"); }
-.bg2 { background-image: url("C:\\Users\\Admin\\react123\\wp7461565-rcb-ipl-wallpapers.jpg"); }
-.bg3 { background-image: url("C:\\Users\\Admin\\react123\\wp9765124-ipl-2021-teams-wallpapers.png"); }
-.bg4 { background-image: url("C:\\Users\\Admin\\react123\\wp7489475-virat-kohli-4k-wallpapers.jpg"); }
-.bg5 { background-image: url("C:\Users\Admin\react123\Rohit.webp"); }
-
-
+.bg1 { background-image: url("C:\\Users\\Admin\\react123\\public\wp7119361-ipl-2020-wallpapers.jpg"); }
+.bg2 { background-image: url("C:\\Users\\Admin\\react123\\public\wp7461565-rcb-ipl-wallpapers.jpg"); }
+.bg3 { background-image: url("C:\\Users\\Admin\\react123\\public\wp9765124-ipl-2021-teams-wallpapers.png"); }
+.bg4 { background-image: url("C:\\Users\\Admin\\react123\\public\wp7489475-virat-kohli-4k-wallpapers.jpg"); }
+.bg5 { background-image: url("C:\Users\Admin\react123\public\Rohit.webp"); }
 
 @keyframes slideBg {
   0% { transform: translateX(0); }
@@ -203,7 +201,7 @@
   padding: 100px 60px;
   background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-    url("C:\Users\Admin\react123\Teams.png");
+    url("C:\Users\Admin\react123\public\Teams.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -301,7 +299,7 @@
   padding: 100px 60px;
   background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-    url("C:\Users\Admin\react123\wp7119361-ipl-2020-wallpapers.jpg");
+    url("C:\Users\Admin\react123\public\wp7119361-ipl-2020-wallpapers.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -353,7 +351,7 @@
   padding: 120px 60px;
   background:
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
-    url("C:\Users\Admin\react123\Stadium.jpg");
+    url("C:\Users\Admin\react123\public\Stadium.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -382,7 +380,7 @@
 .signup-bg {
   background:
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)),
-    url("C:\Users\Admin\react123\Signup.jpg");
+    url("C:\Users\Admin\react123\public\Signup.jpg");
 
   background-size: cover;
   background-position: center;
@@ -395,7 +393,7 @@
 .login-bg {
   background:
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)),
-    url("C:\Users\Admin\react123\Login.jpg");
+    url("C:\Users\Admin\react123\public\Login.jpg");
 
   background-size: cover;
   background-position: center;
@@ -411,7 +409,7 @@
       rgba(246, 241, 234, 0.85),
       rgba(246, 241, 234, 0.85)
     ),
-    url("C:\Users\Admin\react123\Wickets.jpg");
+    url("C:\Users\Admin\react123\public\Wickets.jpg");
 
   background-size: cover;
   background-position: center;
@@ -513,7 +511,7 @@
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.85)
     ),
-    url("C:\Users\Admin\react123\Login.jpg");
+    url("C:\Users\Admin\react123\public\Login.jpg");
 
   background-size: cover;
   background-position: center;
@@ -557,7 +555,7 @@
       rgba(20, 30, 48, 0.85),
       rgba(36, 59, 85, 0.85)
     ),
-    url("C:\Users\Admin\react123\Bat.jpg");
+    url("C:\Users\Admin\react123\public\Bat.jpg");
   
   background-size: cover;
   background-position: center;
@@ -620,7 +618,7 @@
   height: 100vh;
 
   /* Background image */
-  background-image: url("C:\Users\Admin\react123\Help.jpg");
+  background-image: url("C:\Users\Admin\react123\public\Help.jpg");
   background-size: cover; /* cover whole page */
   background-position: center; /* center the image */
   background-repeat: no-repeat;
