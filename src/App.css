@@ -1,0 +1,665 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+/* Navbar */
+.navbar {
+  height: 70px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-size: 18px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.signup {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  height: calc(100vh - 80px);
+  background-color: #2f3437;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.hero-btn {
+  background-color: #f6f1ea;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Auth Pages */
+.auth-container {
+  height: 100vh;
+  background-color: #2f3437;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 15px;
+}
+
+.auth-container h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.auth-container input {
+  width: 300px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.auth-btn {
+  width: 300px;
+  padding: 12px;
+  background-color: #d32727;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.auth-container p {
+  margin-top: 10px;
+}
+
+.auth-container a {
+  color: #f6f1ea;
+  text-decoration: underline;
+}
+
+/* Background slider */
+/* Background slider */
+.slider-container {
+  position: relative;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 500%; /* number of slides * 100% */
+  height: 100%;
+  animation: slideBg 300s linear infinite; /* smooth infinite loop */
+}
+
+.slide {
+  width: 20%; /* 100% / number of slides */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Keyframes for infinite sliding */
+@keyframes slideBg {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-80%); /* (number of slides - 1) * 100% / number of slides */
+  }
+}
+
+
+/* Image paths */
+.bg1 { background-image: url("C:\\Users\\Admin\\react123\\wp7119361-ipl-2020-wallpapers.jpg"); }
+.bg2 { background-image: url("C:\\Users\\Admin\\react123\\wp7461565-rcb-ipl-wallpapers.jpg"); }
+.bg3 { background-image: url("C:\\Users\\Admin\\react123\\wp9765124-ipl-2021-teams-wallpapers.png"); }
+.bg4 { background-image: url("C:\\Users\\Admin\\react123\\wp7489475-virat-kohli-4k-wallpapers.jpg"); }
+.bg5 { background-image: url("C:\Users\Admin\react123\Rohit.webp"); }
+
+
+
+@keyframes slideBg {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
+
+/* Hero overlay */
+.hero {
+  position: absolute;
+  inset: 0;
+  background: rgba(47, 52, 55, 0.65);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Teams Page */
+.teams-page {
+  min-height: 100vh;
+  padding: 100px 60px;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+    url("C:\Users\Admin\react123\Teams.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+.teams-page h1 {
+  margin-bottom: 40px;
+  font-size: 42px;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.team-card {
+  padding: 25px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.team-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-links li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* Book Ticket Page */
+.book-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.book-page h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.book-form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 35px;
+  border-radius: 20px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book-form select,
+.book-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.confirm-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #ff004f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.confirm-btn:hover {
+  opacity: 0.9;
+}
+
+/* Matches Page */
+.matches-page {
+  min-height: 100vh;
+  padding: 100px 60px;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+    url("C:\Users\Admin\react123\wp7119361-ipl-2020-wallpapers.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+.matches-page h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.matches-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.match-card {
+  padding: 25px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.match-card:hover {
+  transform: translateY(-8px);
+}
+
+.match-card h2 {
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.match-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+/* ========================= */
+/* ✅ ABOUT PAGE (ADDED ONLY) */
+/* ========================= */
+
+.about-page {
+  min-height: 100vh;
+  padding: 120px 60px;
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)),
+    url("C:\Users\Admin\react123\Stadium.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+.about-page h1 {
+  font-size: 48px;
+  margin-bottom: 25px;
+  color: #ffd700;
+}
+
+.about-page p {
+  max-width: 900px;
+  margin: 0 auto 18px;
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+/* ========================= */
+/* SIGNUP PAGE BACKGROUND */
+/* ========================= */
+
+.signup-bg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)),
+    url("C:\Users\Admin\react123\Signup.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* ========================= */
+/* LOGIN PAGE BACKGROUND */
+/* ========================= */
+
+.login-bg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)),
+    url("C:\Users\Admin\react123\Login.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* ========================= */
+/* NAVBAR BACKGROUND IMAGE */
+/* ========================= */
+
+.navbar {
+  background:
+    linear-gradient(
+      rgba(246, 241, 234, 0.85),
+      rgba(246, 241, 234, 0.85)
+    ),
+    url("C:\Users\Admin\react123\Wickets.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* =============================== */
+/* SCROLL SECTION BACKGROUND FIX */
+/* =============================== */
+
+.cricket-info {
+  min-height: 100vh;
+  padding: 120px 80px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+/* Initial hidden state */
+.cricket-info h1,
+.info-card,
+.champions {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+.cricket-info h1 {
+  animation-delay: 0.2s;
+}
+
+.info-card:nth-child(1) {
+  animation-delay: 0.4s;
+}
+.info-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.info-card:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.champions {
+  animation-delay: 1s;
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 18px;
+  transition: transform 0.4s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+}
+
+.info-card h2 {
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+.champions {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.champions h2 {
+  margin-bottom: 25px;
+  color: #ffcc00;
+}
+
+.champions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.champions li {
+  margin: 8px 0;
+  font-size: 18px;
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ================================= */
+/* HOME SCROLLED SECTION BACKGROUND */
+/* ================================= */
+
+.cricket-info {
+  min-height: 100vh;
+  padding: 120px 80px;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("C:\Users\Admin\react123\Login.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: white;
+}
+/* ============================= */
+/* HOME BUTTON - MATCHES PAGE */
+/* ============================= */
+
+.home-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 1000;
+
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background: #ffcc00;
+  color: black;
+  transform: scale(1.05);
+}
+/* =============================== */
+/* BOOK PAGE BACKGROUND IMAGE */
+/* =============================== */
+
+.book-page {
+  background:
+    linear-gradient(
+      rgba(20, 30, 48, 0.85),
+      rgba(36, 59, 85, 0.85)
+    ),
+    url("C:\Users\Admin\react123\Bat.jpg");
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* ========================= */
+/* HELP PAGE */
+/* ========================= */
+
+.help-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.help-page h1 {
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+
+.help-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.help-card textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.send-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #ff004f;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.send-btn:hover {
+  opacity: 0.9;
+}
+.help-page {
+  /* Full viewport size */
+  width: 100vw;
+  height: 100vh;
+
+  /* Background image */
+  background-image: url("C:\Users\Admin\react123\Help.jpg");
+  background-size: cover; /* cover whole page */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+
+  /* Optional overlay for readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* text color */
+  text-align: center;
+}
+
+.help-content {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+.footer {
+  background-color: #d6cda280;
+  color: white;
+  padding: 05px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links span {
+  margin: 0 15px;
+  cursor: pointer;
+  color: #ffcc00;
+  transition: color 0.3s;
+}
+
+.footer-links span:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
